@@ -1,0 +1,82 @@
+import random
+import time
+
+def main():
+    print("You are trying to find your way through a maze to the center where")
+    print("there is a pot of Gold!")
+    print("What you don't know is that this a dangerous maze with traps and hazards.")
+    print()
+    print("Starting maze game...")
+    time.sleep(10)
+    print()
+    print("You enter the maze...")
+    time.sleep(3)#time.sleep is just used to build suspense.
+    print ("You reach a opening in the wall and go through it...")
+    print()
+    time.sleep(3)
+    print("You can go left(L), right(R), forward(F) or backward(B).")
+    answer = input("Make a choice: ")
+    if answer == "L":
+        answer = "forward"
+    elif answer == "R":
+        answer = "Right"
+    elif answer == "F":
+        answer = "Forward"
+    elif answer == "B":
+        answer = "Backward"
+    else:
+        print("You put in a wrong value, start again")
+        
+    print ("You chose {0}, what will happen....?".format(answer))
+    time.sleep(3)
+    print("You go {0}...".format(answer))
+    time.sleep(3)
+    print("You walk a few steps...")
+    time.sleep(4)
+    #if answer == "R":
+        #print("...and fall down a trap door never to be seen again")
+    #else:
+        #print("...and see a beautiful grassy path lined with trees with a pot of gold at the end!")
+    chosen = random.randint(1,5)
+    if chosen == 1:
+        print("...and see a beautiful siren whose singing hypnotizes you")
+        print("You move closer...")
+        print()
+        time.sleep(5)
+        print("A huge shark comes up from nowhere and eats you up, BOOM! you're dead")
+    elif chosen == 2:
+        print("...but suddenly a wall appears in front of you")
+        print("and starts to push you back.")
+        print()
+        time.sleep(4)
+        print("The ground opens and you fall into a hole filled with spears.")
+    elif chosen == 3:
+        print()
+        print("...and a hammer from above smashes you to pieces.")
+    elif chosen == 4:
+        print("...and see a sign that tells you it leads to the pot of gold")
+        print("You follow it excitedly...")
+        print()
+        print("You turn a corner and see...")
+        time.sleep(5)
+        print("a zombie samurai who slashes you with his sword.")
+    else:
+        print("and see the floor stained with blood...")
+        time.sleep(2)
+        print("You're scared and try to go back but a wall appears")
+        print("pushing you forward...")
+        time.sleep(2)
+        print("A banshee screams and you hear your name being whispered...")
+        print()
+        time.sleep(2)
+        print("The wall pushes you faster into the dark...")
+        print()
+        time.sleep(2)
+        print("The scream and whisper gets louder...")
+        print("You close your eyes in terror.")
+        print()
+        time.sleep(2)
+        print("Suddenly the wall stops and you open your eyes and see...")
+        time.sleep(5)
+        print("...a pot of Gold!")
+        
